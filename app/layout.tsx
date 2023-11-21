@@ -2,10 +2,10 @@ import { Metadata } from "next";
  import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Ali Shoes',
+  title: 'کفش علی ',
   description:
-    "buy the best shoes on the planet",
-    keywords:"ali shode, shoes planet on cheapshoes"
+    "باکیفیت  ترین کفشا اینجا ",
+    
 };
 
 
