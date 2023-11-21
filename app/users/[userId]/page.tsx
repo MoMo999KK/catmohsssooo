@@ -1,4 +1,11 @@
 import axios from "axios"
+import { Metadata } from "next";
+import { useParams } from "next/navigation";
+ 
+
+ 
+
+ 
 
 
 async function getSingl(id:string){

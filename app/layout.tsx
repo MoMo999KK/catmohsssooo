@@ -1,8 +1,13 @@
-export const metadata = {
-  title: 'Ali Shoe',
-  description: 'but your shoes from Ali SHoe',
-  keywords:"shoes,alishoes"
-}
+import { Metadata } from "next";
+ import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: 'Ali Shoes',
+  description:
+    "buy the best shoes on the planet",
+    keywords:"ali shode, shoes planet on cheapshoes"
+};
+
 
 export default function RootLayout({
   children,
@@ -13,7 +18,23 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body>{children}</body>
+
+
+
+      <body className="w-screen h-screen">
+  
+      <header className="flex gap-4 justify-between w-screen "> 
+      <Link href={"/"}>Home</Link>
+
+        <Link href={"/about"}>about</Link>
+       <Link href={"/admin"}>admin</Link>
+         </header>
+         <div className="pt-12">
+        
+        
+        {children}
+        </div>
+        </body>
     </html>
   );
 }
